@@ -39,19 +39,19 @@ to solve real purpose problems of extracting large information from websites.
   node --source="https://www.espncricinfo.com/series/icc-cricket-world-cup-2019-1144415?ex_cid=ipl2021:google_cpc:search:dsa_feed:msn&gclid=Cj0KCQjw-4SLBhCVARIsACrhWLVv_gGK-NVT1D36fINNofAKdPwIUdjuwmCWE-PuMJCRl3rGClYu5N4aAuJWEALw_wcB" --dataFolder=data --excel=WorldCup.csv
  ```
 ## Code Summary
-1.Read the command line arguments using minimist.
+1. Read the command line arguments using minimist.
 
-2.Read the HTML file use axios and convert it to DOM using JSDOM.
+2. Read the HTML file use axios and convert it to DOM using JSDOM.
 
-3.Using HTML elements and their class read the data which we need and push it into a JSO object.
+3. Using HTML elements and their class read the data which we need and push it into a JSO object.
 
-4.Using the above JSO object with all match details we make another JSO which has team details using array manipulation.
+4. Using the above JSO object with all match details we make another JSO which has team details using array manipulation.
 
-5.Using the teams JSO and excel4node create an excel file with every team match details in a sheet.
+5. Using the teams JSO and excel4node create an excel file with every team match details in a sheet.
 
-6.Make folders using fs.
+6. Make folders using fs.
 
-7.Make a template.pdf using MS Word beforehand, and add the data in that pdf for each team and its matches using pdf-lib.
+7. Make a template.pdf using MS Word beforehand, and add the data in that pdf for each team and its matches using pdf-lib.
 
 
 ## CONTACT
